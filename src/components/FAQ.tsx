@@ -31,7 +31,8 @@ const Items = [
 export default function FAQ(){
     const [openIndex, setOpenIndex] = useState<number | null>(null);
     return(
-        <section className = "overflow-hidden bg-[#080808] py-16 md:px-80 max-md:px-5 overflow-hidden flex flex-col items-center justify-center gap-18">
+        <section id="faq"
+            className = "overflow-hidden bg-[#080808] py-16 md:px-80 max-md:px-5 overflow-hidden flex flex-col items-center justify-center gap-18">
 
             <div className = "flex flex-col items-center justify-center gap-3">
                 <h1 className = "font-['DM_Sans'] font-bold text-5xl max-md:text-3xl leading-[120%] max-md:leading-[130%] max-md:tracking-[-1%] text-center text-[#EFECE6]">Frequently Asked <span className = "bg-linear-to-tr from-[#AAD9D1] to-[#017373] bg-clip-text text-transparent">Questions</span></h1>

@@ -10,6 +10,9 @@ import Citate2 from "./components/Citate2.tsx";
 import Video from "./components/Video.tsx";
 import Citate3 from "./components/Citate2.tsx";
 import FAQ from "./components/FAQ.tsx";
+import Pricing from "./components/Pricing.tsx";
+import Final from "./components/Final.tsx";
+import Footer from "./components/Footer.tsx";
 
 
 function App() {
@@ -26,6 +29,9 @@ function App() {
       <Video/>
       <Citate3/>
       <FAQ/>
+      <Pricing/>
+      <Final/>
+      <Footer/>
     </>
   )
 }

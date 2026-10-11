@@ -31,9 +31,9 @@ export default function Header(){
             </div>
 
             <nav className = "flex items-center gap-14 max-md:hidden">
-                <a className="font-['DM_Sans'] font-normal text-base leading-[150%] text-[#EFECE6]" href="#">Features</a>
-                <a className="font-['DM_Sans'] font-normal text-base leading-[150%] text-[#EFECE6]" href="#">Pricing</a>
-                <a className="font-['DM_Sans'] font-normal text-base leading-[150%] text-[#EFECE6]" href="#">Support</a>
+                <a className="font-['DM_Sans'] font-normal text-base leading-[150%] text-[#EFECE6]" href="#features">Features</a>
+                <a className="font-['DM_Sans'] font-normal text-base leading-[150%] text-[#EFECE6]" href="#pricing">Pricing</a>
+                <a className="font-['DM_Sans'] font-normal text-base leading-[150%] text-[#EFECE6]" href="#support">Support</a>
             </nav>
 
             <button className = "max-md:hidden flex items-center gap-2 rounded-lg px-4 py-3 bg-linear-to-tr from-[#AAD9D1] to-[#017373] cursor-pointer transition-transform hover:scale-105">
@@ -104,13 +104,13 @@ export default function Header(){
                         </svg>
 
                         <nav className = "flex flex-col gap-4 z-1">
-                            <a className="font-['DM_Sans'] font-normal text-xl leading-[150%] text-[#EFECE6]" href="">Features</a>
+                            <a className="font-['DM_Sans'] font-normal text-xl leading-[150%] text-[#EFECE6]" href="#features">Features</a>
                             <span className = "h-px bg-[#EFECE6] w-6/10"></span>
-                            <a className="font-['DM_Sans'] font-normal text-xl leading-[150%] text-[#EFECE6]" href="">Pricing</a>
+                            <a className="font-['DM_Sans'] font-normal text-xl leading-[150%] text-[#EFECE6]" href="#faq">FAQs</a>
                             <span className = "h-px bg-[#EFECE6] w-6/10"></span>
-                            <a className="font-['DM_Sans'] font-normal text-xl leading-[150%] text-[#EFECE6]" href="">FAQs</a>
+                            <a className="font-['DM_Sans'] font-normal text-xl leading-[150%] text-[#EFECE6]" href="#pricing">Pricing</a>
                             <span className = "h-px bg-[#EFECE6] w-6/10"></span>
-                            <a className="font-['DM_Sans'] font-normal text-xl leading-[150%] text-[#EFECE6]" href="">Support</a>
+                            <a className="font-['DM_Sans'] font-normal text-xl leading-[150%] text-[#EFECE6]" href="#support">Support</a>
                         </nav>
 
                         <div className = "flex flex-row gap-4.5 items-center">
