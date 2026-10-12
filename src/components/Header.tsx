@@ -5,7 +5,7 @@ import {motion} from 'framer-motion';
 export default function Header(){
     const [isOpen, setIsOpen] = useState(false);
     return(
-        <section className = "bg-[#080808] flex items-center justify-between w-full px-24 max-md:px-5 py-4 max-md:py-6 border-b-[0.25px] border-gray-600">
+        <section className = "relative z-1 bg-[#080808] flex items-center justify-between w-full px-24 max-md:px-5 py-4 max-md:py-6 border-b-[0.25px] border-gray-600">
             <div>
                 <svg className = "max-md:w-35 max-md:h-auto"
                     width="184" height="38" viewBox="0 0 184 38" fill="none" xmlns="http://www.w3.org/2000/svg">
