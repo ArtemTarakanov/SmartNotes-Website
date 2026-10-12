@@ -13,12 +13,14 @@ import FAQ from "./components/FAQ.tsx";
 import Pricing from "./components/Pricing.tsx";
 import Final from "./components/Final.tsx";
 import Footer from "./components/Footer.tsx";
+import CustomCursor from "./components/CustomCursor.tsx";
 
 
 function App() {
 
   return (
     <>
+      <CustomCursor/>
       <Header />
       <Hero/>
       <Layer/>
