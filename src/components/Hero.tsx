@@ -1,3 +1,4 @@
+import {motion, AnimatePresence} from 'framer-motion';
 export default function Hero(){
     return(
         <section className = "w-full bg-[#080808] px-38 max-md:px-5 py-30 max-md:py-16 flex items-center justify-between">
@@ -5,13 +6,25 @@ export default function Hero(){
             <div className = "flex flex-col gap-10">
 
                 <div className = "flex flex-col gap-4">
-                    <h1 className = "font-['DM_Sans'] font-bold text-6xl max-md:text-3xl leading-[106%] max-md:leading-[130%] tracking-[-1%] text-[#EFECE6] max-w-159">
+                    <motion.h1
+                        initial={{opacity:0, x:-500}}
+                        animate={{opacity: 1, x:1}}
+                        transition={{duration:0.4}}
+                        className = "font-['DM_Sans'] font-bold text-6xl max-md:text-3xl leading-[106%] max-md:leading-[130%] tracking-[-1%] text-[#EFECE6] max-w-159">
                        <span className = "bg-linear-to-tr from-[#AAD9D1] to-[#017373] bg-clip-text text-transparent ">Intelligent</span> cloud-based <span className = "bg-linear-to-tr from-[#AAD9D1] to-[#017373] bg-clip-text text-transparent">note-taking</span> and collaboration tool
-                    </h1>
-                    <p className = "font-['DM_Sans'] font-normal text-base leading-[150%] text-[#BABABA]">Experience the power of smart note-taking and transform the way you work today.</p>
+                    </motion.h1>
+                    <motion.p
+                        initial={{opacity:0, x:-500}}
+                        animate={{opacity: 1, x:1}}
+                        transition={{duration:0.6}}
+                        className = "font-['DM_Sans'] font-normal text-base leading-[150%] text-[#BABABA]">Experience the power of smart note-taking and transform the way you work today.</motion.p>
                 </div>
 
-                <form className = "bg-[#EFECE6] rounded-lg p-2 mx-w-100 flex flex-row items-center justify-between md:max-w-7/10">
+                <motion.form
+                    initial={{opacity:0, x:-500}}
+                    animate={{opacity: 1, x:1}}
+                    transition={{duration:0.8}}
+                    className = "bg-[#EFECE6] rounded-lg p-2 mx-w-100 flex flex-row items-center justify-between md:max-w-7/10">
 
                     <input
                         className = "font-['DM_Sans'] font-normal text-base max-md:text-sm leading-[150%] text-[#333333] ml-4 outline-none"
@@ -29,11 +42,14 @@ export default function Hero(){
 
                     </button>
                     
-                </form>
+                </motion.form>
             </div>
 
-            <div>
-                <svg
+            <AnimatePresence>
+                <motion.svg
+                    initial={{opacity: 0, x:500}}
+                    animate={{opacity: 1, x:0}}
+                    transition={{duration:0.8, ease:"easeInOut"}}
                     className = "max-md:hidden"
                     width="363" height="483" viewBox="0 0 363 483" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_4111_42)">
@@ -491,8 +507,8 @@ export default function Hero(){
                             <rect width="121" height="121" fill="white" transform="translate(242 362)"/>
                         </clipPath>
                     </defs>
-                </svg>
-            </div>
+                </motion.svg>
+            </AnimatePresence>
 
 
         </section>
