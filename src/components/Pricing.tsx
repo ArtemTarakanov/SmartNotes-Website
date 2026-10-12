@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import Toggle from "./Toggle.tsx";
 import {useState} from 'react';
 const Cards = [
@@ -88,11 +89,26 @@ export default function Pricing() {
             className = "bg-[#080808] w-full py-24 max-md:py-16 px-36 max-md:px-5 flex flex-col items-center justify-center gap-10">
 
             <div className = "flex flex-col items-center justify-center gap-3">
-                <h1 className="font-['DM_Sans'] font-bold text-5xl max-md:text-3xl leading-[120%] max-md:leading-[130%] max-md:tracking-[-1%] text-[#EFECE6]"><span className="bg-linear-to-tr from-[#AAD9D1] to-[#017373] bg-clip-text text-transparent">Pricing</span> & Plans</h1>
-                <p className = "max-w-106.5 font-['DM_Sans'] font-normal text-base max-md:text-sm leading-[150%] text-[#BABABA] text-center">With lots of unique blocks, you can easily build a page without coding. Build your next landing page.</p>
+                <motion.h1
+                    initial={{opacity: 0}}
+                    whileInView={{opacity: 1}}
+                    viewport={{once: true, amount: 0.8}}
+                    transition={{duration:1, ease:"easeInOut"}}
+                    className="font-['DM_Sans'] font-bold text-5xl max-md:text-3xl leading-[120%] max-md:leading-[130%] max-md:tracking-[-1%] text-[#EFECE6]"><span className="bg-linear-to-tr from-[#AAD9D1] to-[#017373] bg-clip-text text-transparent">Pricing</span> & Plans</motion.h1>
+                <motion.p
+                    initial={{opacity: 0}}
+                    whileInView={{opacity: 1}}
+                    viewport={{once: true, amount: 0.8}}
+                    transition={{duration:1, ease:"easeInOut"}}
+                    className = "max-w-106.5 font-['DM_Sans'] font-normal text-base max-md:text-sm leading-[150%] text-[#BABABA] text-center">With lots of unique blocks, you can easily build a page without coding. Build your next landing page.</motion.p>
             </div>
 
-            <div className = "flex items-center justify-center gap-3.5">
+            <motion.div
+                initial={{opacity: 0}}
+                whileInView={{opacity: 1}}
+                viewport={{once: true, amount: 0.8}}
+                transition={{duration:1, ease:"easeInOut"}}
+                className = "flex items-center justify-center gap-3.5">
                 <p className = {`font-['DM_Sans'] font-normal text-lg max-md:text-sm leading-[150%] ${isYearly ? "text-[#BABABA]" : "text-[#EFECE6]" }`}>Monthly</p>
                 <Toggle
                     isActived = {isYearly}
@@ -100,11 +116,16 @@ export default function Pricing() {
                 />
                 <p className={`font-['DM_Sans'] font-normal text-lg max-md:text-sm leading-[150%] text-[#BABABA] ${isYearly ? "text-[#EFECE6]" : "text-[#BABABA]"}`}>Yearly</p>
                 <span className = "px-4 py-2 rounded-[40px] bg-linear-to-tr from-[#AAD9D1] to-[#017373]"><p className = "font-['DM_Sans'] font-normal text-sm leading-[150%] text-[#080808]">Save 25%</p></span>
-            </div>
+            </motion.div>
 
             <div className = {`grid gap-10 justify-center max-md:grid-cols-1 ${isYearly ? "grid-cols-2" : "grid-cols-3"}`}>
                 {displayedCards.map((card, index)=>(
-                    <div key={index} className = {`group px-8 py-10 flex flex-col  justify-center gap-8 rounded-[10px] border-2 border-[#048C80] bg-[#F7F7F7] hover:bg-[#080808] transition-transform duration-200 hover:scale-105 `}>
+                    <motion.div
+                        initial={{opacity: 0, x:100}}
+                        whileInView={{opacity: 1, x:0}}
+                        viewport={{once: true, amount: 0.5}}
+                        transition={{duration:0.6, delay: index*0.1, ease:"easeInOut"}}
+                        key={index} className = {`group px-8 py-10 flex flex-col  justify-center gap-8 rounded-[10px] border-2 border-[#048C80] bg-[#F7F7F7] hover:bg-[#080808] transition-transform duration-200 hover:scale-105 `}>
                         <div className = "flex items-center gap-2">
                             <span>{card.icon}</span>
                             <p className = "font-['DM_Sans'] font-normal text-sm leading-[150%] text-[#048C80]">{card.plan}</p>
@@ -138,7 +159,7 @@ export default function Pricing() {
                                 <p className = "text-center font-['DM_Sans'] font-normal text-xs leading-[150%] text-[#737373]">No credit card required</p>
                             )}
                         </div>
-                    </div>
+                    </motion.div>
                 ))}
             </div>
         </section>

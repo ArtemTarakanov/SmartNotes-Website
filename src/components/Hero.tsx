@@ -9,21 +9,21 @@ export default function Hero(){
                     <motion.h1
                         initial={{opacity:0, x:-500}}
                         animate={{opacity: 1, x:1}}
-                        transition={{duration:0.4}}
+                        transition={{duration:0.8}}
                         className = "font-['DM_Sans'] font-bold text-6xl max-md:text-3xl leading-[106%] max-md:leading-[130%] tracking-[-1%] text-[#EFECE6] max-w-159">
                        <span className = "bg-linear-to-tr from-[#AAD9D1] to-[#017373] bg-clip-text text-transparent ">Intelligent</span> cloud-based <span className = "bg-linear-to-tr from-[#AAD9D1] to-[#017373] bg-clip-text text-transparent">note-taking</span> and collaboration tool
                     </motion.h1>
                     <motion.p
                         initial={{opacity:0, x:-500}}
                         animate={{opacity: 1, x:1}}
-                        transition={{duration:0.6}}
+                        transition={{duration:1}}
                         className = "font-['DM_Sans'] font-normal text-base leading-[150%] text-[#BABABA]">Experience the power of smart note-taking and transform the way you work today.</motion.p>
                 </div>
 
                 <motion.form
                     initial={{opacity:0, x:-500}}
                     animate={{opacity: 1, x:1}}
-                    transition={{duration:0.8}}
+                    transition={{duration:1.2}}
                     className = "bg-[#EFECE6] rounded-lg p-2 mx-w-100 flex flex-row items-center justify-between md:max-w-7/10">
 
                     <input

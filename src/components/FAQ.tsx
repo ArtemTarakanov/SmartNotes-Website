@@ -35,13 +35,28 @@ export default function FAQ(){
             className = "overflow-hidden bg-[#080808] py-16 md:px-80 max-md:px-5 overflow-hidden flex flex-col items-center justify-center gap-18">
 
             <div className = "flex flex-col items-center justify-center gap-3">
-                <h1 className = "font-['DM_Sans'] font-bold text-5xl max-md:text-3xl leading-[120%] max-md:leading-[130%] max-md:tracking-[-1%] text-center text-[#EFECE6]">Frequently Asked <span className = "bg-linear-to-tr from-[#AAD9D1] to-[#017373] bg-clip-text text-transparent">Questions</span></h1>
-                <p className = " w-full font-['DM_Sans'] font-normal text-base max-md:text-sm leading-[150%] text-[#BABABA] text-center">We've compiled a list of the most frequently asked questions about SmartNotes to help you get the information you need. If you have any other questions, feel free to reach out to our support team.</p>
+                <motion.h1
+                    initial={{opacity: 0}}
+                    whileInView={{opacity: 1}}
+                    viewport={{once: true, amount: 0.8}}
+                    transition={{duration:1, ease:"easeInOut"}}
+                    className = "font-['DM_Sans'] font-bold text-5xl max-md:text-3xl leading-[120%] max-md:leading-[130%] max-md:tracking-[-1%] text-center text-[#EFECE6]">Frequently Asked <span className = "bg-linear-to-tr from-[#AAD9D1] to-[#017373] bg-clip-text text-transparent">Questions</span></motion.h1>
+                <motion.p
+                    initial={{opacity: 0}}
+                    whileInView={{opacity: 1}}
+                    viewport={{once: true, amount: 0.8}}
+                    transition={{duration:1, ease:"easeInOut"}}
+                    className = " w-full font-['DM_Sans'] font-normal text-base max-md:text-sm leading-[150%] text-[#BABABA] text-center">We've compiled a list of the most frequently asked questions about SmartNotes to help you get the information you need. If you have any other questions, feel free to reach out to our support team.</motion.p>
             </div>
 
             <div className = "flex flex-col md:w-7/10 max-md:w-full gap-5">
                 {Items.map((item, index)=>(
-                    <div key={index} className = {`items-center justify-between border border-[#048C80] rounded-lg transition-transform duration-200 ${openIndex === index ? "bg-[#EFECE6]" : "bg-[#080808]"}`}>
+                    <motion.div
+                        initial={{opacity: 0}}
+                        whileInView={{opacity: 1}}
+                        viewport={{once: true, amount: 0.5}}
+                        transition={{duration:0.3, delay : index*0.1, ease:"easeInOut"}}
+                        key={index} className = {`items-center justify-between border border-[#048C80] rounded-lg transition-transform duration-200 hover:scale-105 ${openIndex === index ? "bg-[#EFECE6]" : "bg-[#080808]"}`}>
 
                         <button className = "w-full flex items-center justify-between px-6 py-4.5"
                             onClick={()=>setOpenIndex(openIndex === index ? null : index)}>
@@ -67,7 +82,7 @@ export default function FAQ(){
                             )}
                         </AnimatePresence>
 
-                    </div>
+                    </motion.div>
                 ))}
 
             </div>

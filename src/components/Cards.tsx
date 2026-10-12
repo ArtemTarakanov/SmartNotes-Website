@@ -1,3 +1,5 @@
+import { motion } from "framer-motion"
+
 const Card = [
     {
         title : "Cross-Platform Accessibility",
@@ -203,13 +205,28 @@ export default function Cards(){
 
             <div className = "z-1 grid grid-cols-4 max-md:grid-cols-1 gap-5">
                 {Card.map((card, index)=>(
-                            <div key={index} className = {`border border-[#048C80] rounded-xl shadow-[#23272E14] flex flex-col gap-6 p-8 max-md:p-5 ${index<2 ? "md:col-span-2" : "md:col-span-1"}`}>
+                            <motion.div
+                                initial={{opacity: 0, y:50}}
+                                whileInView={{opacity: 1, y:0}}
+                                viewport={{once: true, amount: 0.8}}
+                                transition={{duration:0.6, delay:index*0.15, ease:"easeInOut"}}
+                                key={index} className={`border border-[#048C80] rounded-xl
+                                shadow-[#23272E14]
+                                flex flex-col gap-6 p-8 max-md:p-5
+                                group
+                                bg-transparent
+                                transition-all duration-300 ease-out
+                                hover:bg-white
+                                hover:border-white
+                                hover:-translate-x-1 hover:-translate-y-1
+                                hover:shadow-[6px_6px_0_0_#000]
+                                ${index < 2 ? "md:col-span-2" : "md:col-span-1"}`}>
                                 <span>{card.icon}</span>
                                 <div className = "flex flex-col gap-3">
-                                    <h2 className = "font-['DM_Sans'] font-bold text-xl max-md:text-base leading-[150%] text-[#EFECE6]">{card.title}</h2>
-                                    <p className = {`font-['DM_Sans'] font-normal text-base max-md:text-sm leading-[150%] text-[#BABABA] ${index<2 ? "md:max-w-124" : "md:max-w-51"}`}>{card.description}</p>
+                                    <h2 className = "font-['DM_Sans'] font-bold text-xl max-md:text-base leading-[150%] text-[#EFECE6] group-hover:text-black">{card.title}</h2>
+                                    <p className = {`font-['DM_Sans'] font-normal text-base max-md:text-sm leading-[150%] text-[#BABABA] group-hover:text-[#333333] ${index<2 ? "md:max-w-124" : "md:max-w-51"}`}>{card.description}</p>
                                 </div>
-                            </div>
+                            </motion.div>
                 ))}
             </div>
         </section>

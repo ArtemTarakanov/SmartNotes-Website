@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 export default function Final(){
     return(
         <section className = "w-full bg-[#080808] px-38 max-md:px-5 py-30 max-md:py-16 flex items-center justify-center md:gap-20">
@@ -5,13 +7,28 @@ export default function Final(){
             <div className = "flex flex-col gap-10 ">
 
                 <div className = "flex flex-col gap-4">
-                    <h1 className = "font-['DM_Sans'] font-bold text-6xl max-md:text-3xl leading-[106%] max-md:leading-[130%] tracking-[-1%] text-[#EFECE6] max-w-125 max-md:w-full">
+                    <motion.h1
+                        initial={{opacity: 0, x:-200}}
+                        whileInView={{opacity: 1, x:0}}
+                        viewport={{once: true, amount: 0.2}}
+                        transition={{duration:0.9, ease:"easeInOut"}}
+                        className = "font-['DM_Sans'] font-bold text-6xl max-md:text-3xl leading-[106%] max-md:leading-[130%] tracking-[-1%] text-[#EFECE6] max-w-125 max-md:w-full">
                         Unlock the Full Potential of <span className = "bg-linear-to-tr from-[#AAD9D1] to-[#017373] bg-clip-text text-transparent ">SmartNotes</span>
-                    </h1>
-                    <p className = "max-w-125 max-md:w-full font-['DM_Sans'] font-normal text-base leading-[150%] text-[#BABABA]">Ready to streamline your workflow and boost your productivity? Start your free trial of SmartNotes today and experience the power of smart note-taking. </p>
+                    </motion.h1>
+                    <motion.p
+                        initial={{opacity: 0, x:-200}}
+                        whileInView={{opacity: 1, x:0}}
+                        viewport={{once: true, amount: 0.2}}
+                        transition={{duration:1, ease:"easeInOut"}}
+                        className = "max-w-125 max-md:w-full font-['DM_Sans'] font-normal text-base leading-[150%] text-[#BABABA]">Ready to streamline your workflow and boost your productivity? Start your free trial of SmartNotes today and experience the power of smart note-taking. </motion.p>
                 </div>
 
-                <button className = "w-fit flex items-center gap-4 px-10 py-4 rounded-lg bg-linear-to-tr from-[#AAD9D1] to-[#017373]">
+                <motion.button
+                    initial={{opacity: 0, x:-200}}
+                    whileInView={{opacity: 1, x:0}}
+                    viewport={{once: true, amount: 0.2}}
+                    transition={{duration:1.1, ease:"easeInOut"}}
+                    className = "w-fit flex items-center gap-4 px-10 py-4 rounded-lg bg-linear-to-tr from-[#AAD9D1] to-[#017373]">
                     <p className = "font-['DM_Sans'] font-bold text-xl max-md:text-base text-[#080808]">Sign Up for Free</p>
                     <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect x="0.5" y="0.5" width="31" height="31" rx="7.5" stroke="#080808"/>
@@ -19,12 +36,17 @@ export default function Final(){
                         <path d="M20.2047 8.58255L16.2799 12.5073L16.2785 12.5088L15.7702 12.5088L15.7702 13.0171L7.29413 21.4932L10.0685 24.2676L19.0543 15.2817L19.0565 22.7285L22.9806 22.7278L22.9806 12.508L22.9784 11.3577L22.9791 11.3569V8.58467L22.977 8.58255L20.2047 8.58255Z" fill="#080808"/>
                     </svg>
 
-                </button>
+                </motion.button>
 
             </div>
 
             <div>
-                <svg
+                <motion.svg
+                    initial={{opacity: 0, x:200}}
+                    whileInView={{opacity: 1, x:0}}
+                    viewport={{once: true, amount: 0.5}}
+                    transition={{duration:1.4, ease:"easeInOut"}}
+
                     className = "max-md:hidden"
                     width="363" height="483" viewBox="0 0 363 483" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_4111_42)">
@@ -482,7 +504,7 @@ export default function Final(){
                             <rect width="121" height="121" fill="white" transform="translate(242 362)"/>
                         </clipPath>
                     </defs>
-                </svg>
+                </motion.svg>
             </div>
 
 

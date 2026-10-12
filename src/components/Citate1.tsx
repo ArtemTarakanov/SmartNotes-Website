@@ -10,7 +10,7 @@ export default function Citate1(){
                 <motion.svg
                     initial={{opacity: 0, y:100}}
                     whileInView={{opacity: 1, y:0}}
-                    viewport={{once: true, amount: 0.8}}
+                    viewport={{once: true, amount: "some"}}
                     transition={{duration:0.6, ease:"easeInOut"}}
                     className="max-md:h-auto"
                     width="38" height="24" viewBox="0 0 38 24" fill="none" xmlns="http://www.w3.org/2000/svg">
