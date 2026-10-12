@@ -11,3 +11,9 @@ html, body{
         cursor: none;
     }
 }
+
+@media (hover: none) and (pointer: coarse) {
+    .custom-cursor {
+        display: none;
+    }
+}

@@ -2,7 +2,6 @@ import {motion, AnimatePresence} from 'framer-motion';
 export default function Hero(){
     return(
         <section className = "w-full bg-[#080808] px-38 max-md:px-5 py-30 max-md:py-16 flex items-center justify-between">
-
             <div className = "flex flex-col gap-10">
 
                 <div className = "flex flex-col gap-4">

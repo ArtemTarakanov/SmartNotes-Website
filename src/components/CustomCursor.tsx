@@ -20,7 +20,7 @@ export default function CustomCursor() {
 
   return (
     <div
-      className="fixed top-0 left-0 z-[9999] w-4 h-4 rounded-full
+      className="custom-cursor fixed top-0 left-0 z-[9999] w-4 h-4 rounded-full
         bg-[#AAD9D1] pointer-events-none shadow-[0_0_20px_#048C80]"
       style={{
         transform: `translate(${position.x - 8}px, ${position.y - 8}px)`,
