@@ -31,14 +31,13 @@ export default function Hero(){
                         required
                         placeholder = "Enter your email"
                     />
-                    <button className = "flex flex-row items-center gap-2 bg-linear-to-tr from-[#AAD9D1] to-[#017373] rounded-lg py-4 max-md:py-3 px-6">
-                        <p className="font-['DM_Sans'] font-normal text-base leading-[150%] text-[#080808]">Sign up</p>
+                    <button className = "flex flex-row items-center gap-2 bg-[#048C80] rounded-lg py-4 max-md:py-3 px-6">
+                        <p className="font-['DM_Sans'] font-normal text-base leading-[150%] text-[#EFECE6]">Sign up</p>
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect x="0.5" y="0.5" width="23" height="23" rx="4.5" stroke="#333333"/>
-                            <path d="M6.6059 6.43717V9.38062H12.2097V6.43717H6.6059Z" fill="#333333"/>
-                            <path d="M15.1535 6.43709L12.2099 9.38069L12.2089 9.38175L11.8277 9.38175L11.8277 9.76297L5.47058 16.1201L7.55138 18.2009L14.2907 11.4615L14.2923 17.0466L17.2354 17.046V9.38122L17.2338 8.51842L17.2343 8.51789L17.2343 6.43869L17.2327 6.43709L15.1535 6.43709Z" fill="#333333"/>
+                            <rect x="0.5" y="0.5" width="23" height="23" rx="4.5" stroke="#EFECE6"/>
+                            <path d="M6.6059 6.43717V9.38062H12.2097V6.43717H6.6059Z" fill="#EFECE6"/>
+                            <path d="M15.1535 6.43709L12.2099 9.38069L12.2089 9.38175L11.8277 9.38175L11.8277 9.76297L5.47058 16.1201L7.55138 18.2009L14.2907 11.4615L14.2923 17.0466L17.2354 17.046V9.38122L17.2338 8.51842L17.2343 8.51789L17.2343 6.43869L17.2327 6.43709L15.1535 6.43709Z" fill="#EFECE6"/>
                         </svg>
-
                     </button>
                     
                 </motion.form>

@@ -36,8 +36,8 @@ export default function Header(){
                 <a className="font-['DM_Sans'] font-normal text-base leading-[150%] text-[#EFECE6]" href="#support">Support</a>
             </nav>
 
-            <button className = "max-md:hidden flex items-center gap-2 rounded-lg px-4 py-3 bg-linear-to-tr from-[#AAD9D1] to-[#017373] cursor-pointer transition-transform hover:scale-105">
-                <p className="font-['DM_Sans'] fonr-normal text-base leading-[150%] text-[#080808]">Get Started</p>
+            <button className = "max-md:hidden flex items-center gap-2 rounded-lg px-4 py-3 bg-[#048C80] cursor-pointer transition-transform hover:scale-105">
+                <p className="font-['DM_Sans'] font-normal text-base leading-[150%] text-[#EFECE6]">Get Started</p>
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect x="0.5" y="0.5" width="23" height="23" rx="4.5" stroke="#333333"/>
                     <path d="M6.60583 6.43717V9.38062H12.2096V6.43717H6.60583Z" fill="#333333"/>

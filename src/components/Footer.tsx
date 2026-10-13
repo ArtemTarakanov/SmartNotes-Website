@@ -4,7 +4,7 @@ export default function Footer(){
 
 
             <div className = "w-full bg-[#048C80] flex max-md:flex-col items-center justify-between max-md:justify-center px-36 max-md:px-5 py-5 max-md:py-4 max-md:gap-2">
-                <p className = "max-md: order-2 max-md:text-center font-['DM_Sans'] font-normal text-sm leading-[150%] text-[#080808]">@2024 SmartNotesI. All Rights Reserved.</p>
+                <p className = "max-md:order-2 max-md:text-center font-['DM_Sans'] font-normal text-sm leading-[150%] text-[#EFECE6]">@2024 SmartNotesI. All Rights Reserved.</p>
 
                 <svg className = "max-md:hidden"
                     width="184" height="38" viewBox="0 0 184 38" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -28,7 +28,7 @@ export default function Footer(){
                     </defs>
                 </svg>
 
-                <div className = "flex items-center gap-2.5 max-md:order-1">
+                <div className = "flex items-center justify-center gap-2.5 max-md:order-1">
                     <svg width="42" height="40" viewBox="0 0 42 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect width="41.351" height="40" rx="20" fill="#017373"/>
                         <path d="M23.659 13.988H25.351V11.126C24.5318 11.0408 23.7086 10.9988 22.885 11C20.437 11 18.763 12.494 18.763 15.23V17.588H16V20.792H18.763V29H22.075V20.792H24.829L25.243 17.588H22.075V15.545C22.075 14.6 22.327 13.988 23.659 13.988Z" fill="#EFECE6"/>

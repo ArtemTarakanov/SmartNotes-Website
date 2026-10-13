@@ -115,7 +115,7 @@ export default function Pricing() {
                     setActived = {setYearly}
                 />
                 <p className={`font-['DM_Sans'] font-normal text-lg max-md:text-sm leading-[150%] text-[#BABABA] ${isYearly ? "text-[#EFECE6]" : "text-[#BABABA]"}`}>Yearly</p>
-                <span className = "px-4 py-2 rounded-[40px] bg-linear-to-tr from-[#AAD9D1] to-[#017373]"><p className = "font-['DM_Sans'] font-normal text-sm leading-[150%] text-[#080808]">Save 25%</p></span>
+                <span className = "px-4 py-2 rounded-[40px] bg-[#048C80]"><p className = "font-['DM_Sans'] font-normal text-sm leading-[150%] text-[#EFECE6]">Save 25%</p></span>
             </motion.div>
 
             <div className = {`grid gap-10 justify-center max-md:grid-cols-1 ${isYearly ? "grid-cols-2" : "grid-cols-3"}`}>
@@ -146,12 +146,12 @@ export default function Pricing() {
                         </div>
 
                         <div className = "flex flex-col gap-2">
-                            <button className = "flex items-center gap-2 py-4 px-25 max-md:px-15 rounded-lg bg-[#EFECE6] border border-[#048C80] group-hover:bg-linear-to-tr from-[#AAD9D1] to-[#017373]">
-                                <p className = "font-['DM_Sans'] font-normal text-lg max-md:text-base leading-[150%] text-[#080808]">{card.button}</p>
+                            <button className = "flex items-center gap-2 py-4 px-25 max-md:px-15 rounded-lg bg-[#EFECE6] border border-[#048C80] group-hover:bg-[#048C80]">
+                                <p className = "font-['DM_Sans'] font-normal text-lg max-md:text-base leading-[150%] text-[#080808] group-hover:text-[#EFECE6]">{card.button}</p>
                                 <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <rect x="0.5" y="0.5" width="26" height="26" rx="5.5" stroke="#333333"/>
-                                    <path d="M7.43158 7.24185V10.5532H13.7359V7.24185H7.43158Z" fill="#333333"/>
-                                    <path d="M17.0478 7.24164L13.7362 10.5532L13.735 10.5544L13.3062 10.5544L13.3062 10.9833L6.15444 18.135L8.49534 20.4759L16.0771 12.8941L16.0789 19.1773L19.3899 19.1767V10.5538L19.3881 9.58313L19.3887 9.58254V7.24343L19.3869 7.24164L17.0478 7.24164Z" fill="#333333"/>
+                                    <rect x="0.5" y="0.5" width="26" height="26" rx="5.5" stroke="#333333" className="group-hover:stroke-[#EFECE6]"/>
+                                    <path d="M7.43158 7.24185V10.5532H13.7359V7.24185H7.43158Z" fill="#333333" className="group-hover:fill-[#EFECE6]"/>
+                                    <path d="M17.0478 7.24164L13.7362 10.5532L13.735 10.5544L13.3062 10.5544L13.3062 10.9833L6.15444 18.135L8.49534 20.4759L16.0771 12.8941L16.0789 19.1773L19.3899 19.1767V10.5538L19.3881 9.58313L19.3887 9.58254V7.24343L19.3869 7.24164L17.0478 7.24164Z" fill="#333333" className="group-hover:fill-[#EFECE6]"/>
                                 </svg>
                             </button>
 

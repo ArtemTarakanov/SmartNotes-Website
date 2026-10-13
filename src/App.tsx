@@ -8,7 +8,7 @@ import Discover from "./components/Discover.tsx";
 import Cards from "./components/Cards.tsx";
 import Citate2 from "./components/Citate2.tsx";
 import Video from "./components/Video.tsx";
-import Citate3 from "./components/Citate2.tsx";
+import Citate3 from "./components/Citate3.tsx";
 import FAQ from "./components/FAQ.tsx";
 import Pricing from "./components/Pricing.tsx";
 import Final from "./components/Final.tsx";
